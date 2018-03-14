@@ -1,168 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-  
-<head>
+<!--Note: the formatting of this text is inconsistent. no seriously, indentation, spacing, all that stuff: it's horrible. there are way too many forms. but that's fine, considering i won't be using any JS or even handling input for that matter. -->
 
-    <meta charset="utf-8" />
-    <title>Imaginary website - sign up</title>
-    <h2 align ="Left">Imaginary website - account creation</h2>
-    <hr />
+<!--Changes:
 
-</head>
+  - implemented use of div tag and colours
+  - used some CSS to align text boxes.
+  - used padding to make the title text stand out.
+
+-->
+
+<!--Current tasks:
+
+  - Finish adding inputs
+  - Styleize and commit to github.
+
+-->
 
 
-<body align=" left">
 
-    <h3>In order to use our non-existent and abritrary services, you must create an acount with us. <br /> see <a href="#Signup">below</a> to enter your details and sign up(the fields marked with stars are required):</h3>
+<html class="no-js" lang="eng-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        
+        <title>Signup page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <br />
-    <br />
-    <br />
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-    <h3 name="Signup">Basic information*</h3>
-    <hr />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="index.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+    <body>
+        
+
+        <div style = "background-color:black; color:white; padding:40px;">
+          
+          
+          <h2>Imaginary website&trade;: &nbsp; account creation</h2>
+          
+          
+        </div>
+        
+        <div style = "background-color:green; color:black; padding: 20px;"> <!--Handles most of the page aesthetic-->
+          
+          
+          <fieldset>
+          <legend>Mandatory information</legend>
+          <br>
+          
+          <form action = "" method = ""><!--first form-->
+          
+            <!--Name and surname-->
+            <label for = "fname">First name</label> &nbsp; &nbsp; <input id = "fname" type = "text">
+            <br>
+            <br>
+            
+            <label for = "sname">Surname</label> &nbsp; &nbsp;  <input id = "sname" type = "text">
+            <!--Email adress -->
+            <br>
+            <br>
+            
+            <label for = "email">Email adress</label> &nbsp; &nbsp; <input type = "email">
+            <br>
+            <br>
+            
+            <!--Set a new password.-->
+            <label for = "newPassword">New password</label> &nbsp; &nbsp; <input type = "password" id = "newPassword">
+            <br>
+            <br>
+            
+            <!--Confirm the new password you just entered.-->
+            <label for = "confirmPassword">Confirm password</label> &nbsp; &nbsp; <input type = "password" id = "confirmPassword">
+            <br>
+            <br>
+            
+            </form>
+          
+            </fieldset>
+            
+            
+            <br>
+            
+            <form>
+            
+            <fieldset>
+            
+            
+             <!-- second form -->
+            
+            
+            
+            <legend>Reigonal information</legend>
+            <br>
+            
+            <label for = "reigon">Country of origin/Riegon</label>
+            <select id = "reigon">
+              
+              <option>Please select a reigon...</option>
+              <option>Europe(EU)</option>
+              <option>Oceana</option>
+              <option>Asia</option>
+              <option>North america(NA)</option>
+              <option>South america(SA)</option>
+              <option>Other</option>
+              
+            </select>
+            </fieldset>
+            
+            </form>
+            
+            <br>
+            <br>
+            
+            <form>
+            <fieldset>
+             
+            
+            <legend>Personal information</legend>
+            <br>
+            
+            <label for = "phoneNumber">Phone number</label> &nbsp; &nbsp; <input type = "text" id = "phoneNumber">
+            <br>
+            <br>
+            
+            
+            </fieldset>
+            </form>
+            <br>
+            
+            <form>
+            
+            
+            <fieldset>
+            <legend>Gender</legend>
+           
+            <label for = "Male">Male</label> &nbsp; &nbsp; <input type = "radio" id = "Male" name = "gender">
+            &nbsp;
+            <label for = "female">Female</label> &nbsp; &nbsp; <input type = "radio" id = "female" name = "gender">
+            
+            
+            </fieldset>
+            </form>
+            
+            <br>
+            
+            <fieldset>
+            <legend>Misc</legend>
+            <br>
+            
+            <form>
+            
+            Which of the following hobbies do you often Enjoy doing?
+            <br>
+            <br>
+            
+            <label for = "cooking">Cooking</label> &nbsp; &nbsp; <input type = "checkbox" id = "cooking">
+            <br>
+            <label for = "gaming">Gaming</label> &nbsp; &nbsp; <input type = "checkbox" id = "gaming">
+            <br>
+            <label for = "programming">Programming</label> &nbsp; &nbsp; <input type = "checkbox" id = "programming">
+            <br>
+            <label for = "sport">Playing sports</label>  &nbsp; &nbsp; <input type = "checkbox" id = "sport">
+            <br>
+            <label for = "shopping">Shopping</label> &nbsp; &nbsp; <input type = "checkbox" id = "shopping">
+            <br>
+            <br>
+            <label for = "other" name = "long">None of the above</label> &nbsp; &nbsp; <input type = "checkbox" id = "other">
+            
+            <br>
+            <br>
+            
+            <label for = "bio">Tell us a bit about yourself...</label> &nbsp; &nbsp; <textarea id = "bio" rows = "5" cols = "10"></textarea>
+            
+            </form>
+            
+            
+            </fieldset>
+            
+            <br>
+            
+            <form>
+            
+            <fieldset>
+              
+              
+                
+                <legend>Finalize signup</legend>
+                <br>
+                
+                
+                  
+                  <label for = "tos">I agree to the <a href = "https://www.apple.com/ca/legal/internet-services/itunes/ca/terms.html" target = "_blank">terms of service</a></label> &nbsp; &nbsp; <input type = "checkbox" id = "tos" checked="true">
+                  
+                  <br>
+                  <br>
+                  <label for = "updates">I agree to recieve regular emails containing news and updates</label> &nbsp; &nbsp; <input type = "checkbox" id = "updates">
+                  
+                  <br>
+                  <br>
+                  <input type = "submit" value = "Sign up">
+                
+              
+            </fieldset>
+            
+            </form>
+            
+            
+          
+            
+          
+        </div>
+        
+        
+        
     
-    <label for="FName">First name</label>
-    <input type="text" id="FName" />
-    
-    <br />
-    <br />
+        
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
-    <label for="SName">Surname</label>
-    <input type="text" id="SName" />
-
-    <br />
-    <br />
-
-    <label for="emailAD">Email adress</label>
-    <input type="email" id="emailAD" />
-
-    <br />
-    <br />
-
-    <label for="PPassword">Password</label>
-    <input type="password" id="PPassword" />
-
-    <br />
-    <br />
-
-    <label for="CPassword">Confirm password</label>
-    <input type="password" id="CPassword" />
-
-
-    <br />
-    <br />
-
-    <h3>Personal/Reigonal information*</h3>
-    <hr />
-
-    <br />
-    <br />
-
-    <label for="DOB">Age/Date of birth</label>
-    <input type="date" id="DOB" />
-
-
-    <br />
-    <br />
-
-    <label>Gender</label>
-
-    <br />
-    <br />
-
-    <label>Male</label>
-    <input type="radio" name="Gender" />
-    <label>Female</label>
-    <input type="radio" name="Gender" />
-
-    <br />
-    <br />
-
-    <label for="reigon">Reigon</label>
-
-    <br />
-
-    <select>
-
-        <option>Please select a reigon...</option>
-        <option>Europe(EU)</option>
-        <option>North america(NA)</option>
-        <option>South america(SA)</option>
-        <option>Asia</option>
-        <option>Africa</option>
-        <option>Oceana</option>
-
-    </select>
-
-    <br />
-    <br />
-
-    <label for="P-N">Phone number</label>
-    <br />
-    <input type="text" id="P-N" />
-
-    <br />
-    <br />
-
-    <h3>Miscellaneous</h3>
-    <hr />
-
-    <br />
-    <br />
-
-    <label>Which of the below are your prefered/favourite hobbites?</label>
-
-    <br />
-    <br />
-
-    <label for="fishing">Fishing &nbsp;</label><input type="checkbox" id="fishing" />
-    <br />
-    <label for="dancing">Dance &nbsp;</label><input type="checkbox" id="dancing" />
-    <br />
-    <label for = "exercise">Exercise &nbsp; </label><input type = "checkbox" id = "exercise">
-    <br />
-    <label for="gaming">Video games / gaming &nbsp;</label><input type="checkbox" id="gaming" />
-    <br />
-    <label for="music">Music &nbsp; </label><input type="checkbox" id="music" />
-    <br />
-    <label for="misc">None of the above &nbsp;</label><input type="checkbox" id="misc" />
-
-    <br />
-    <br />
-
-    <label for="otherH">If you selected none of the above, what other hobbies do you prefer?</label>
-    <br />
-    <br />
-    <textarea id="otherH" rows="8" cols="20">(Enter your input here...)</textarea>
-
-    <br>
-    <input type = "Submit" value = "Submit">
-
-    <br />
-    <br />
-
-    <h3>Complete account creation</h3>
-    <hr />
-    <!--Add some final checkboxes here, such as "i'm not a robot" or "Sign me up for regular emails".-->
-    <label for="tos">I agree to the imaginary website(tm)'s terms of service</label>
-    <input type="checkbox" id="tos"/>
-    <br />
-    
-    <br/>
-    <br/>
-    
-    <label for="updates">Send me regular emails containing news, updates, etc.</label>
-    <input type = "checkbox" id = "updates" checked="true">
-    
-    <br/>
-    <br/>
-    
-    <input type = "submit" value = "sign up">
-
-
-</body>
-
-
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        
+        
+    </body>
 </html>
