@@ -19,7 +19,7 @@
 
 
 
-<html class="no-js" lang="eng-us">
+<html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -37,42 +37,45 @@
         <link href="index.css" rel="stylesheet" type="text/css" />
         
     </head>
-    <body>
+    <body align = "center">
         
-
-        <div style = "background-color:black; color:white; padding:40px;">
-          
-          
+        
+        
+        <div style = "background-color: black; color: white; padding: 40px;">
           <h2>Imaginary website&trade;: &nbsp; account creation</h2>
-          
-          
         </div>
         
-        <div style = "background-color:green; color:black; padding: 20px;"> <!--Handles most of the page aesthetic-->
-          
+        
+        <div style = "background-color: green; color: black; padding: 20px;">
           
           <fieldset>
-          <legend>Mandatory information</legend>
-          <br>
-          
-          <form action = "" method = ""><!--first form-->
-          
-            <!--Name and surname-->
-            <label for = "fname">First name</label> &nbsp; &nbsp; <input id = "fname" type = "text">
+            <legend>Mandatory information</legend>
+            <br>
+            
+            <form>
+              
+            <!--first name-->
+            <label for = "fname">First name</label> &nbsp; &nbsp;
+            <input id = "fname" type = "text">
             <br>
             <br>
             
-            <label for = "sname">Surname</label> &nbsp; &nbsp;  <input id = "sname" type = "text">
-            <!--Email adress -->
+            
+            <!--Surname-->
+            <label for = "sname">Second name</label> &nbsp; &nbsp; 
+            <input id = "sname" type = "text">
             <br>
             <br>
             
-            <label for = "email">Email adress</label> &nbsp; &nbsp; <input type = "email">
+            <!--Email adress-->
+            <label for = "email">Email adress</label> &nbsp; &nbsp;
+            <input id = "email" type = "text">
             <br>
             <br>
             
             <!--Set a new password.-->
-            <label for = "newPassword">New password</label> &nbsp; &nbsp; <input type = "password" id = "newPassword">
+            <label for = "newPassword">New password</label> &nbsp;
+            &nbsp; <input type = "password" id = "newPassword">
             <br>
             <br>
             
@@ -80,26 +83,17 @@
             <label for = "confirmPassword">Confirm password</label> &nbsp; &nbsp; <input type = "password" id = "confirmPassword">
             <br>
             <br>
-            
+              
             </form>
+          </fieldset>
+          <br>
           
-            </fieldset>
-            
-            
-            <br>
-            
-            <form>
-            
-            <fieldset>
-            
-            
-             <!-- second form -->
-            
-            
-            
+          <fieldset>
             <legend>Reigonal information</legend>
             <br>
             
+            <form>
+              
             <label for = "reigon">Country of origin/Riegon</label>
             <select id = "reigon">
               
@@ -112,56 +106,48 @@
               <option>Other</option>
               
             </select>
-            </fieldset>
-            
+              
             </form>
-            
-            <br>
-            <br>
-            
-            <form>
-            <fieldset>
-             
-            
+          </fieldset>
+          <br>
+
+          <fieldset>
             <legend>Personal information</legend>
             <br>
             
+            <form>
+              
             <label for = "phoneNumber">Phone number</label> &nbsp; &nbsp; <input type = "text" id = "phoneNumber">
             <br>
             <br>
             
-            
-            </fieldset>
+              
             </form>
+          </fieldset>
+          <br>
+          
+          <fieldset>
+            <legend>Gender</legend>
             <br>
             
             <form>
+              
+            <label for = "Male">Male</label> &nbsp; &nbsp; <input type = "radio" id = "Male" name = "gender"> <!--Seems quite messy at first, but it's not too bad... -->
             
-            
-            <fieldset>
-            <legend>Gender</legend>
-           
-            <label for = "Male">Male</label> &nbsp; &nbsp; <input type = "radio" id = "Male" name = "gender">
             &nbsp;
             <label for = "female">Female</label> &nbsp; &nbsp; <input type = "radio" id = "female" name = "gender">
             
-            
-            </fieldset>
             </form>
-            
-            <br>
-            
-            <fieldset>
+          </fieldset>
+          <br>
+          
+          <fieldset>
             <legend>Misc</legend>
             <br>
             
             <form>
-            
-            Which of the following hobbies do you often Enjoy doing?
-            <br>
-            <br>
-            
-            <label for = "cooking">Cooking</label> &nbsp; &nbsp; <input type = "checkbox" id = "cooking">
+              
+                          <label for = "cooking">Cooking</label> &nbsp; &nbsp; <input type = "checkbox" id = "cooking">
             <br>
             <label for = "gaming">Gaming</label> &nbsp; &nbsp; <input type = "checkbox" id = "gaming">
             <br>
@@ -172,52 +158,45 @@
             <label for = "shopping">Shopping</label> &nbsp; &nbsp; <input type = "checkbox" id = "shopping">
             <br>
             <br>
-            <label for = "other" name = "long">None of the above</label> &nbsp; &nbsp; <input type = "checkbox" id = "other">
+            <label for = "other">None of the above</label> &nbsp; &nbsp; <input type = "checkbox" id = "other">
             
             <br>
             <br>
             
             <label for = "bio">Tell us a bit about yourself...</label> &nbsp; &nbsp; <textarea id = "bio" rows = "5" cols = "10"></textarea>
-            
+              
             </form>
+          </fieldset>
+          <br>
+          <br>
+    
+    
+        </div>
+        
+        <div style = "background-color: black; color: white; padding: 40px;">
+          
+          <h2> &nbsp; &nbsp; Finialise account creation</h2>
             
-            
-            </fieldset>
-            
+            <br>
             <br>
             
             <form>
-            
-            <fieldset>
               
-              
-                
-                <legend>Finalize signup</legend>
-                <br>
-                
-                
+                  I agree to the <a href = "https://www.apple.com/ca/legal/internet-services/itunes/ca/terms.html" target = "_blank">terms of service</a>&nbsp; &nbsp; <input type = "checkbox" id = "tos" checked="true">
+                  <br>
+                  <br>
                   
-                  <label for = "tos">I agree to the <a href = "https://www.apple.com/ca/legal/internet-services/itunes/ca/terms.html" target = "_blank">terms of service</a></label> &nbsp; &nbsp; <input type = "checkbox" id = "tos" checked="true">
+                  I agree to recieve regular emails containing news and updates &nbsp; &nbsp; <input type = "checkbox" id = "updates">
+                  <br>
+                  <br>
+                  <br>
                   
-                  <br>
-                  <br>
-                  <label for = "updates">I agree to recieve regular emails containing news and updates</label> &nbsp; &nbsp; <input type = "checkbox" id = "updates">
-                  
-                  <br>
-                  <br>
-                  <input type = "submit" value = "Sign up">
-                
-              
-            </fieldset>
-            
+                  <input type = "submit" value = "Sign up" id = "signup">
+
             </form>
-            
-            
-          
             
           
         </div>
-        
         
         
     
